@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   const stats = [
     {
-      name: 'Account Balance',
+      name: 'Available Capital',
       value: `$${user.balance.toLocaleString('en-US', { minimumFractionDigits: 2 })}`,
       change: '+12.5%',
       changeType: 'increase',

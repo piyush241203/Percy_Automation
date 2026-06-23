@@ -90,7 +90,7 @@ export default function Home() {
         {/* Pricing Cards */}
         <div className="mt-24 sm:mt-32">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-white">Simple, Transparent Pricing</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white">Pricing Tailored For Your Team</h2>
             <p className="mt-4 text-slate-400">
               No hidden fees. Free developer testing plans included.
             </p>
