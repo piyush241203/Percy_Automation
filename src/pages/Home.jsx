@@ -38,7 +38,7 @@ export default function Home() {
             <Layers className="h-3.5 w-3.5" /> Next-Gen Visual Automation
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-none">
-            Eliminate Visual Flaws in <span className="gradient-text">Your Applications</span>
+            Eliminate Visual Flaws in <span className="gradient-text">Your Web Apps</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto">
             Integrate Playwright with Percy to deploy code with confidence. Catch color changes, layout breaks, button shifts, and font issues before they reach production.
