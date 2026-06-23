@@ -36,7 +36,7 @@ export default function Checkout() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Billing Form (Col-span 2) */}
-        <div className="glass-panel rounded-2xl p-6 lg:col-span-2 space-y-6">
+        <div className="glass-panel rounded-2xl p-6 lg:col-span-2 lg:order-2 space-y-6">
           <h2 className="text-lg font-bold text-white border-b border-slate-900 pb-4">Credit Card Information</h2>
 
           <form onSubmit={handleCheckout} className="space-y-4">
@@ -112,7 +112,7 @@ export default function Checkout() {
         </div>
 
         {/* Order Summary (Col-span 1) */}
-        <div className="glass-panel rounded-2xl p-6 flex flex-col justify-between space-y-6">
+        <div className="glass-panel rounded-2xl p-6 lg:order-1 flex flex-col justify-between space-y-6">
           <div className="space-y-6">
             <h2 className="text-lg font-bold text-white border-b border-slate-900 pb-4">Order Summary</h2>
 

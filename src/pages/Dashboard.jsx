@@ -63,7 +63,14 @@ export default function Dashboard() {
       {/* Stats Grid */}
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
-          <div key={stat.name} className="glass-panel rounded-2xl p-6 relative overflow-hidden">
+          <div
+            key={stat.name}
+            className={`rounded-2xl p-6 relative overflow-hidden ${
+              stat.name === 'Available Capital'
+                ? 'bg-gradient-to-br from-emerald-950 to-indigo-950 border border-emerald-500/30 shadow-lg shadow-emerald-500/10'
+                : 'glass-panel'
+            }`}
+          >
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">{stat.name}</span>
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 border border-slate-700 text-brand-400">
