@@ -15,6 +15,8 @@ jobs:
       # Step 1: Check out the repository source code
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # Step 2: Set up Node.js environment
       - name: Setup Node.js
@@ -43,7 +45,7 @@ jobs:
         run: |
           if [ -z "$PERCY_TOKEN" ]; then
             echo "Warning: PERCY_TOKEN is not configured. Running Playwright tests without Percy."
-            npx playwright test
+            npm run test:selective
           else
-            npx percy exec -- npx playwright test
+            npx percy exec -- npm run test:selective
           fi
