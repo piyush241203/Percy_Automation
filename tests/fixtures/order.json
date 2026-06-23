@@ -1,0 +1,26 @@
+[
+  {
+    "id": "txn_8941235",
+    "productName": "Enterprise Visual Suite",
+    "amount": 299.00,
+    "status": "Completed",
+    "date": "2026-06-20T10:00:00Z",
+    "paymentMethod": "Visa ending in 4242"
+  },
+  {
+    "id": "txn_8941098",
+    "productName": "Add-on: 20k Snapshots pack",
+    "amount": 50.00,
+    "status": "Completed",
+    "date": "2026-06-15T14:32:00Z",
+    "paymentMethod": "Visa ending in 4242"
+  },
+  {
+    "id": "txn_8940772",
+    "productName": "Developer Sandbox Plan",
+    "amount": 49.00,
+    "status": "Refunded",
+    "date": "2026-05-18T09:15:00Z",
+    "paymentMethod": "Mastercard ending in 9901"
+  }
+]

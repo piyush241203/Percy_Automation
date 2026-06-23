@@ -1,0 +1,26 @@
+{
+  "id": "usr_908213",
+  "name": "Sarah Connor",
+  "email": "sarah.connor@evantech.com",
+  "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+  "role": "QA Architect",
+  "company": "Evantech Solutions",
+  "plan": "Enterprise Pro",
+  "joinedDate": "January 15, 2025",
+  "balance": 142050.80,
+  "currency": "USD",
+  "notifications": [
+    {
+      "id": "notif_1",
+      "type": "payment",
+      "message": "Payment of $4,500.00 received from Cyberdyne Systems.",
+      "timestamp": "10 minutes ago"
+    },
+    {
+      "id": "notif_2",
+      "type": "security",
+      "message": "New login detected from Safari on macOS.",
+      "timestamp": "2 hours ago"
+    }
+  ]
+}

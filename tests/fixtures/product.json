@@ -1,0 +1,30 @@
+[
+  {
+    "id": "prod_ent_001",
+    "name": "Enterprise Visual Suite",
+    "description": "Continuous visual regression testing, cross-browser snapshots, and high-performance pixel diff engine.",
+    "price": 299.00,
+    "interval": "month",
+    "features": [
+      "100,000 snapshots / month",
+      "Unlimited users & teams",
+      "Chromium, Firefox, & WebKit testing",
+      "GitHub & GitLab integrations",
+      "1-year build history retention"
+    ]
+  },
+  {
+    "id": "prod_dev_002",
+    "name": "Developer Sandbox Plan",
+    "description": "Perfect for solo developers and QA engineers looking to build visual automation portfolios.",
+    "price": 49.00,
+    "interval": "month",
+    "features": [
+      "5,000 snapshots / month",
+      "1 user seat",
+      "Chromium only",
+      "Basic GitHub actions support",
+      "30-day build history retention"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+version: 2
+snapshot:
+  # Screen widths at which Percy will capture and render screenshots
+  widths:
+    - 375   # Mobile
+    - 768   # Tablet
+    - 1366  # Laptop
+    - 1920  # Desktop
+  minHeight: 1024
+  
+  # Custom CSS applied only during snapshot rendering in Percy's cloud browsers
+  # This provides a secondary layer of protection against dynamic widgets or shifting layouts
+  percy-css: |
+    /* Hide animations globally */
+    *, *:before, *:after {
+      animation-delay: 0s !important;
+      animation-duration: 0s !important;
+      transition-duration: 0s !important;
+    }
+    /* Hide dynamic elements explicitly marked */
+    [data-percy-ignore], .percy-ignore {
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }

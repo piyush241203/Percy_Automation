@@ -1,0 +1,49 @@
+name: CI/CD Visual Automation Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  visual-testing:
+    name: Run Playwright & Percy Visual Regression
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository source code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      # Step 3: Install all NPM packages (production and development)
+      - name: Install Project Dependencies
+        run: npm ci
+
+      # Step 4: Install Playwright browsers (Chromium, Firefox, WebKit) and OS dependencies
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      # Step 5: Run Playwright tests and upload snapshots to Percy Cloud
+      # Wrap the Playwright command with "percy exec" to start the Percy local agent,
+      # serialize the DOM snapshot calls, and upload them to the comparison dashboard.
+      - name: Execute E2E Visual Tests
+        env:
+          # Secure token injected via GitHub secrets to authenticate uploads to the Percy account
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          CI: true
+        # If PERCY_TOKEN is set, it executes percy snapshots; if missing in forks, we fall back to normal tests.
+        run: |
+          if [ -z "$PERCY_TOKEN" ]; then
+            echo "Warning: PERCY_TOKEN is not configured. Running Playwright tests without Percy."
+            npx playwright test
+          else
+            npx percy exec -- npx playwright test
+          fi
