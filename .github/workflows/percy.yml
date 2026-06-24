@@ -42,6 +42,10 @@ jobs:
         if: steps.cache-playwright.outputs.cache-hit != 'true'
         run: npx playwright install
 
+      # Step 6: Install OS dependencies for the browsers
+      - name: Install Playwright OS Dependencies
+        run: npx playwright install-deps
+
       # Step 5: Run Playwright tests and upload snapshots to Percy Cloud
       # Wrap the Playwright command with "percy exec" to start the Percy local agent,
       # serialize the DOM snapshot calls, and upload them to the comparison dashboard.
