@@ -36,7 +36,7 @@ export default function Profile() {
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 w-full space-y-8">
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-white">Developer Settings</h1>
-        <p className="text-sm text-slate-400 mt-1">Configure profile badges, token authentication, and view live demo </p>
+        <p className="text-sm text-slate-400 mt-1">Configure profile credentials, tokens, and active session environments.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
