@@ -145,7 +145,8 @@ function executePlaywright(grepPattern) {
   // Command options
   const args = ['playwright', 'test'];
   if (grepPattern) {
-    args.push('--grep', grepPattern);
+    // Wrap the pattern in double quotes to prevent the shell from interpreting the '|' as a pipe
+    args.push('--grep', `"${grepPattern}"`);
   }
   
   // Set workers to 1 to run tests sequentially and avoid timeouts on slower runners
