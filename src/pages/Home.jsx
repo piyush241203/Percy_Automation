@@ -35,10 +35,10 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <StableSelectorWrapper testId="hero-section" className="space-y-6 max-w-3xl mx-auto">
           <div className="mb-6 bg-brand-500/10 border border-brand-500/30 text-brand-400 p-4 rounded-xl text-xs flex items-center justify-center gap-2 max-w-lg mx-auto">
-            <span>✨ Live Visual Regression Testing Demo active!</span>
+            <span>✨ Live Visual Testing Demo active!</span>
           </div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold uppercase tracking-wider">
-            <Layers className="h-3.5 w-3.5" /> Next-Gen Visual Automation using percy
+            <Layers className="h-3.5 w-3.5" /> Next-Gen Visual Automation using percy and playwright
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-none">
             Eliminate Visual Flaws in <span className="gradient-text">Your Web UI/UX</span>

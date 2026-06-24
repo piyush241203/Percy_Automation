@@ -36,7 +36,7 @@ export default function Profile() {
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 w-full space-y-8">
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-white">Developer Settings</h1>
-        <p className="text-sm text-slate-400 mt-1">Configure profile badges, token authentication, and view active sessions.</p>
+        <p className="text-sm text-slate-400 mt-1">Configure profile badges, token authentication, and view live demo </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -77,7 +77,7 @@ export default function Profile() {
               <h3 className="text-sm font-bold text-slate-200 flex items-center gap-1.5">
                 <Key className="h-4 w-4 text-brand-400" /> Webhook API Access Key
               </h3>
-              <p className="text-xs text-slate-400 mt-1">Use this secret key to upload snapshots to custom external reporters.</p>
+              <p className="text-xs text-slate-400 mt-1">Use this secret key.</p>
             </div>
 
             <div className="flex gap-2">

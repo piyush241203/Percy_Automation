@@ -29,7 +29,7 @@ export default function Checkout() {
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 w-full space-y-8">
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-white flex items-center gap-2">
-          <ShoppingCart className="h-7 w-7 text-brand-500" /> Secure Checkout
+          <ShoppingCart className="h-7 w-7 text-brand-500" /> Checkout
         </h1>
         <p className="text-sm text-slate-400 mt-1">Review your plan license and credentials.</p>
       </div>
@@ -37,7 +37,7 @@ export default function Checkout() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Billing Form (Col-span 2) */}
         <div className="glass-panel rounded-2xl p-6 lg:col-span-2 lg:order-2 space-y-6">
-          <h2 className="text-lg font-bold text-white border-b border-slate-900 pb-4">Credit Card Information</h2>
+          <h2 className="text-lg font-bold text-white border-b border-slate-900 pb-4">Card Information</h2>
 
           <form onSubmit={handleCheckout} className="space-y-4">
             {/* Cardholder Name */}
