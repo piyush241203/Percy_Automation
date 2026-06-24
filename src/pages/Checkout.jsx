@@ -31,7 +31,7 @@ export default function Checkout() {
         <h1 className="text-3xl font-bold tracking-tight text-white flex items-center gap-2">
           <ShoppingCart className="h-7 w-7 text-brand-500" /> Secure Checkout
         </h1>
-        <p className="text-sm text-slate-400 mt-1">Review your plan license details and configure billing credentials.</p>
+        <p className="text-sm text-slate-400 mt-1">Review your plan license and credentials.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
