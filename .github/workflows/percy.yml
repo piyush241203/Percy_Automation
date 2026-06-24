@@ -29,9 +29,18 @@ jobs:
       - name: Install Project Dependencies
         run: npm ci
 
-      # Step 4: Install Playwright browsers (Chromium, Firefox, WebKit) and OS dependencies
+      # Step 4: Cache Playwright Browser Binaries to speed up runs
+      - name: Cache Playwright Browsers
+        id: cache-playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      # Step 5: Install Playwright Browsers
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
+        run: npx playwright install
 
       # Step 5: Run Playwright tests and upload snapshots to Percy Cloud
       # Wrap the Playwright command with "percy exec" to start the Percy local agent,
