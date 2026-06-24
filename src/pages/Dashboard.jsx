@@ -46,7 +46,7 @@ export default function Dashboard() {
         <div>
           {/* Static greetings are critical to prevent visual test failures */}
           <h1 className="text-3xl font-bold tracking-tight text-white">
-            Workspace: {user.company}
+            Evantech Workspace: {user.company}
           </h1>
           <p className="text-sm text-slate-400 mt-1">
             Logged in as {user.name} ({user.role}) &bull; Current plan: {user.plan}

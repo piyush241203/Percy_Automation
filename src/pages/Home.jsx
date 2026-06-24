@@ -44,7 +44,7 @@ export default function Home() {
             Eliminate Visual Flaws in <span className="gradient-text">Your Web UI/UX</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto">
-            Integrate Playwright with Percy to deploy code with confidence. Catch color changes, layout breaks, button shifts, and font issues before they reach production.
+            Integrate Playwright with Percy to deploy code with absolute confidence. Catch color changes, layout breaks, button shifts, and font issues before they reach production.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link

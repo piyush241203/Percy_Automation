@@ -18,7 +18,7 @@ export default function Signup() {
   return (
     <div className="space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold tracking-tight text-white">Register a New Workspace</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-white">Register your Evantech account</h2>
         <p className="mt-2 text-sm text-slate-400">
           Or{' '}
           <Link to={`/login${searchString}`} className="font-semibold text-brand-400 hover:text-brand-300">
